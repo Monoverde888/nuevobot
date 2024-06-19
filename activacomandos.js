@@ -19,7 +19,7 @@ for (const folder of commandFolders) {
 		if ('data' in command && 'execute' in command) {
 			commands.push(command.data.toJSON());
 		} else {
-			console.log(`QUE ONDA] EL COMANDO EN ${filePath} NO TIENE PROPIEDAD DATA O EXECUTE.`);
+			console.log(`[QUE ONDA] EL COMANDO EN ${filePath} NO TIENE PROPIEDAD DATA O EXECUTE.`);
 		}
 	}
 }
