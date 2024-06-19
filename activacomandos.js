@@ -34,9 +34,9 @@ const rest = new REST().setToken(process.env.token);
 
 		// The put method is used to fully refresh all commands in the guild with the current set
 		const data = await rest.put(
-			Routes.applicationGuildCommands(process.env.yoid, process.env.serverid),
-			{ body: commands },
-		);
+            Routes.applicationCommands(process.env.yoid),
+            { body: commands },
+        );
 
 		console.log(`REFREZQUE ${data.length} SLASH COMANDOS.`);
 	} catch (error) {
