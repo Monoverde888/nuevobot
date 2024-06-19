@@ -10,6 +10,6 @@ module.exports = {
 	async execute(interaction) {
 		await interaction.reply('HOLA!!!!!!!');
 		await wait(2_000)
-		await interaction.editReply("HAGO TODO PORQUE SOY EL MEJOR BOT DE DISCORD MEJOR QUE MEE6 ES UN ASCO")
+		await interaction.editReply({ content: "HAGO TODO PORQUE SOY EL MEJOR BOT DE DISCORD MEJOR QUE MEE6 ES UN ASCO", files: [mee6] })
 	},
 };
