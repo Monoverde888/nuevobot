@@ -11,9 +11,12 @@
   "description": "",
   "dependencies": {
     "discord.js": "^14.15.3",
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.4.5",
+    "globals": "^15.6.0",
+    "@eslint/js": "^9.5.0"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.1.0",
     "eslint": "^9.5.0"
   }
 }

@@ -1,5 +1,5 @@
 const { REST, Routes } = require('discord.js');
-require('dotenv').config()
+require('dotenv').config();
 const fs = require('node:fs');
 const path = require('node:path');
 
@@ -18,7 +18,8 @@ for (const folder of commandFolders) {
 		const command = require(filePath);
 		if ('data' in command && 'execute' in command) {
 			commands.push(command.data.toJSON());
-		} else {
+		}
+		 else {
 			console.log(`[QUE ONDA] EL COMANDO EN ${filePath} NO TIENE PROPIEDAD DATA O EXECUTE.`);
 		}
 	}
@@ -39,7 +40,8 @@ const rest = new REST().setToken(process.env.token);
 		);
 
 		console.log(`REFRESQUE ${data.length} SLASH COMANDOS.`);
-	} catch (error) {
+	}
+	 catch (error) {
 		// And of course, make sure you catch and log any errors!
 		console.error(error);
 	}

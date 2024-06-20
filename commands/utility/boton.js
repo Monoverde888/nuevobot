@@ -2,8 +2,8 @@ const { ActionRowBuilder, ButtonBuilder, ButtonStyle, SlashCommandBuilder } = re
 
 module.exports = {
 	data: new SlashCommandBuilder()
-        .setName("boton")
-        .setDescription("BOTON EPICO"),
+		.setName("boton")
+		.setDescription("BOTON EPICO"),
 	async execute(interaction) {
 		const target = interaction.options.getUser('target');
 		const reason = interaction.options.getString('reason') ?? 'No reason provided';

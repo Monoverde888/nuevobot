@@ -8,7 +8,7 @@ module.exports = {
 		const command = interaction.client.commands.get(interaction.commandName);
 
 		if (!command) {
-            console.error(`NO EXISTE NINGUN COMANDO QUE SE LLAME ${interaction.commandName} IDIOTITA.`);
+			console.error(`NO EXISTE NINGUN COMANDO QUE SE LLAME ${interaction.commandName} IDIOTITA.`);
 			return;
 		}
 
@@ -17,9 +17,9 @@ module.exports = {
 		} catch (error) {
 			console.error(error);
 			if (interaction.replied || interaction.deferred) {
-                await interaction.followUp({ content: 'NO PUEDOOOOOOO!', ephemeral: true });
+				await interaction.followUp({ content: 'NO PUEDOOOOOOO!', ephemeral: true });
 			} else {
-                await interaction.reply({ content: 'AAAAA NO PUEDO!!!!!!!', ephemeral: true });
+				await interaction.reply({ content: 'AAAAA NO PUEDO!!!!!!!', ephemeral: true });
 			}
 		}
 	},
