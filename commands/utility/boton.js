@@ -1,4 +1,4 @@
-const { ActionRowBuilder, ButtonBuilder, ButtonStyle, SlashCommandBuilder } = require('discord.js');
+const { ActionRowBuilder, ButtonBuilder, ButtonStyle, SlashCommandBuilder, ComponentType } = require('discord.js');
 
 module.exports = {
 	data: new SlashCommandBuilder()
@@ -15,13 +15,17 @@ module.exports = {
 			.setLabel('NOGUS?????')
 			.setStyle(ButtonStyle.Danger)
 			.setEmoji("839636351468830841");
-
+		const gus = new ButtonBuilder()
+			.setCustomId('gus')
+			.setLabel('GUS????')
+			.setStyle(ButtonStyle.Primary)
+			.setEmoji("835153246150066287")
+			.setDisabled(true);
 		const row = new ActionRowBuilder()
-			.addComponents(sigus, nogus);
+			.addComponents(sigus, nogus, gus);
 
 		await interaction.reply({
 			content: `ESTAS SEGURO???`,
 			components: [row],
 		});
-	},
-};
+	}	};
