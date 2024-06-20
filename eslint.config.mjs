@@ -49,8 +49,7 @@ export default [...compat.extends("eslint:recommended"), {
 		"no-console": "off",
 		"no-empty-function": "error",
 		"no-floating-decimal": "error",
-		"no-unused-vars": "off",
-		"no-inline-comments": "error",
+		"no-unused-vars": "warn",
 		"no-lonely-if": "error",
 		"no-multi-spaces": "error",
 

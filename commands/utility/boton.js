@@ -37,7 +37,8 @@ module.exports = {
 			} else if (confirmation.customId === 'nogus') {
 				await confirmation.update({ content: 'que onda', components: [] });
 			}
-		} catch (error) {
+		} catch (e) {
+			console.log(e)
 			await interaction.editReply({ content: 'chao', components: [] });
 		}
 	}	};
