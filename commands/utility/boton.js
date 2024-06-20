@@ -5,24 +5,22 @@ module.exports = {
 		.setName("boton")
 		.setDescription("BOTON EPICO"),
 	async execute(interaction) {
-		const target = interaction.options.getUser('target');
-		const reason = interaction.options.getString('reason') ?? 'No reason provided';
-
-		const confirm = new ButtonBuilder()
-			.setCustomId('confirm')
-			.setLabel('Confirm Ban')
-			.setStyle(ButtonStyle.Danger);
-
-		const cancel = new ButtonBuilder()
-			.setCustomId('cancel')
-			.setLabel('Cancel')
-			.setStyle(ButtonStyle.Secondary);
+		const sigus = new ButtonBuilder()
+			.setCustomId('sigus')
+			.setLabel('AMOGUS??')
+			.setStyle(ButtonStyle.Success)
+			.setEmoji('837145070813446204');
+		const nogus = new ButtonBuilder()
+			.setCustomId('nogus')
+			.setLabel('NOGUS?????')
+			.setStyle(ButtonStyle.Danger)
+			.setEmoji("839636351468830841");
 
 		const row = new ActionRowBuilder()
-			.addComponents(cancel, confirm);
+			.addComponents(sigus, nogus);
 
 		await interaction.reply({
-			content: `Are you sure you want to ban ${target} for reason: ${reason}?`,
+			content: `ESTAS SEGURO???`,
 			components: [row],
 		});
 	},
