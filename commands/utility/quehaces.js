@@ -1,6 +1,5 @@
 const { AttachmentBuilder, SlashCommandBuilder } = require('discord.js');
 const wait = require('node:timers/promises').setTimeout;
-
 const mee6 = new AttachmentBuilder("./assets/ASCO.jpg")
 
 module.exports = {
