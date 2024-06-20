@@ -19,7 +19,7 @@ module.exports = {
 			.setCustomId('gus')
 			.setLabel('GUS????')
 			.setStyle(ButtonStyle.Primary)
-			.setEmoji("835153246150066287")
+			.setEmoji("835153212733653004")
 			.setDisabled(true);
 		const row = new ActionRowBuilder()
 			.addComponents(sigus, nogus, gus);

@@ -21,7 +21,7 @@ for (const folder of commandFolders) {
 		if ('data' in command && 'execute' in command) {
 			client.commands.set(command.data.name, command);
 		} else {
-			console.log(`[QUE ONDA] EL COMANDO EN ${filePath} NO TIENE PROPIEDAD DATA O EXECUTE.`);
+			console.warn(`[QUE ONDA] EL COMANDO EN ${filePath} NO TIENE PROPIEDAD DATA O EXECUTE.`);
 		}
 	}
 }
@@ -38,5 +38,6 @@ for (const file of eventFiles) {
 		client.on(event.name, (...args) => event.execute(...args));
 	}
 }
+
 
 client.login(process.env.token);
