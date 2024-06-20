@@ -36,9 +36,8 @@ module.exports = {
 				await confirmation.update({ content: `AMONGAAAAAAAAAAAAAAAS`, components: [] });
 			} else if (confirmation.customId === 'nogus') {
 				await confirmation.update({ content: 'que onda', components: [] });
-			}
+			} // eslint-disable-next-line  no-unused-vars
 		} catch (e) {
-			console.log(e)
 			await interaction.editReply({ content: 'chao', components: [] });
 		}
 	}	};
