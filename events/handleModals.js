@@ -32,12 +32,12 @@ module.exports = {
 
 				await interaction.reply({
 					embeds: [new EmbedBuilder().setTitle('Evaluated Code').setDescription(`\`\`\`${escapeCodeBlock(result)}\`\`\``).setTimestamp()],
-					ephemeral: true,
+					ephemeral: false,
 				});
 
 				interaction.followUp({
 					files: [new AttachmentBuilder(Buffer.from(result, 'utf-8')).setName('Evaluated Code.txt')],
-					ephemeral: true,
+					ephemeral: false,
 				}); }
 			}
 
