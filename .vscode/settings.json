@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "epic",
+            "database": "\\\\wsl.localhost\\Ubuntu\\home\\mono\\bot\\db.sqlite"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}
