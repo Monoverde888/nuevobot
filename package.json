@@ -10,10 +10,12 @@
   "license": "MIT",
   "description": "",
   "dependencies": {
+    "@eslint/js": "^9.5.0",
+    "@keyv/sqlite": "^3.6.7",
     "discord.js": "^14.15.3",
     "dotenv": "^16.4.5",
     "globals": "^15.6.0",
-    "@eslint/js": "^9.5.0"
+    "keyv": "^4.5.4"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.1.0",
