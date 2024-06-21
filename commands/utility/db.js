@@ -4,10 +4,15 @@ const keyv = new Keyv('sqlite://./db.sqlite');
 keyv.on('error', err => console.error('Keyv connection error:', err));
 module.exports = {
 	data: new SlashCommandBuilder()
-		.setName('apaga')
-		.setDescription('APAGATEEEEEEEEE'),
+		.setName('db')
+		.setDescription('USA LA INCREIBLE BASE DE DATOS SQLITE GRACIAS A A KEYV')
+		.addStringOption(option =>
+			option.setName('añadir')
+				.setDescription('QUE COSA AÑADIR A LA DB SUPER INCREIBLE')
+				.setRequired(true)),
 	async execute(interaction) {
-		await interaction.reply('ok chao').then(() => {
+		const dbAdd = interaction.options.getString('añadir', true)
+		await interaction.reply("OK VOY A AÑADIR" + dbAdd + "A LA BASE DE DATOS").then(() => {
 			console.log("APAGANDO POR ORDEN DE " + interaction.user.tag)
 			interaction.client.destroy();
 		});
